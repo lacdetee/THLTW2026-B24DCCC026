@@ -93,7 +93,7 @@ export default function Bai2() {
 
   return (
     <div style={styles.container}>
-      <h2>📚 Quản Lý Học Tập</h2>
+      <h2>Quản Lý Học Tập</h2>
 
       {/* Tabs */}
       <div style={styles.tabs}>
@@ -212,7 +212,7 @@ export default function Bai2() {
       {/* TAB 3: THỐNG KÊ + MỤC TIÊU */}
       {activeTab === "stats" && (
         <div style={styles.card}>
-          <h3>🎯 Mục tiêu hàng tháng</h3>
+          <h3>Mục tiêu hàng tháng</h3>
 
           {subjects.map(subject => {
             const total = calculateTotal(subject.id)
