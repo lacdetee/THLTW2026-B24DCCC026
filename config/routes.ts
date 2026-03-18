@@ -43,11 +43,12 @@
 		component: './TodoList',
 	},
 	{
-		path: '/th01',
-		name: 'Bài thực hành 01',
+		path: '/th03',
+		name: 'Bài thực hành 03',
 		// icon: 'OrderedListOutlined',
-		component: './TH01',
+		component: './TH03',
 	},
+
 
 	// DANH MUC HE THONG
 	// {
