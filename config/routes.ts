@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -43,17 +43,19 @@
 		component: './TodoList',
 	},
 	{
-		path: '/Bai1',
-		name: 'OanTuTi',
-		icon: 'OrderedListOutlined',
-		component: './TH02/Bai1',
+		path: '/th03',
+		name: 'Bài thực hành 03',
+		// icon: 'OrderedListOutlined',
+		component: './TH03',
 	},
 	{
-		path: '/Bai2',
-		name: 'NganHangCauHoi',
-		icon: 'OrderedListOutlined',
-		component: './TH02/Bai2',
+		path: '/th6',
+		name: 'Bài thực hành 06',
+		// icon: 'CompassOutlined',
+		component: './TH6',
 	},
+
+
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
