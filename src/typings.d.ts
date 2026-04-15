@@ -59,3 +59,13 @@ declare const APP_CONFIG_TITLE_CORE: string;
 declare const APP_CONFIG_TITLE_CSVC: string;
 declare const APP_CONFIG_TITLE_THU_VIEN: string;
 declare const APP_CONFIG_TITLE_QLVB: string;
+
+declare namespace PhongHoc {
+	interface IRecord {
+		maPhong: string;
+		tenPhong: string;
+		soChoNgoi: number;
+		loaiPhong: 'ly_thuyet' | 'thuc_hanh' | 'hoi_truong';
+		nguoiPhuTrach: string;
+	}
+}
