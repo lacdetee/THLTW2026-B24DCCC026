@@ -19,7 +19,7 @@ const LOAI_PHONG_OPTIONS = [
 
 const FormPhongHoc = () => {
 	const [form] = Form.useForm();
-	const { data, record, isEdit, setVisible, getDataPhongHoc } = useModel('phonghoc');
+	const { record, isEdit, setVisible, getDataPhongHoc } = useModel('phonghoc');
 
 	useEffect(() => {
 		if (isEdit && record) {

@@ -48,6 +48,12 @@ export default [
 		icon: 'BookOutlined',
 		component: './KTGK',
 	},
+	{
+		path: '/blog',
+		name: 'Blog cá nhân',
+		icon: 'ReadOutlined',
+		component: './TH07',
+	},
 
 	// DANH MUC HE THONG
 	// {

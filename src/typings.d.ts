@@ -69,3 +69,26 @@ declare namespace PhongHoc {
 		nguoiPhuTrach: string;
 	}
 }
+
+declare namespace Blog {
+	interface ITag {
+		id: string;
+		name: string;
+		color: string;
+	}
+
+	interface IPost {
+		id: string;
+		title: string;
+		slug: string;
+		summary: string;
+		content: string;
+		coverImage: string;
+		author: string;
+		tags: string[];
+		status: 'draft' | 'published';
+		viewCount: number;
+		createdAt: string;
+		updatedAt: string;
+	}
+}
