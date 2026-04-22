@@ -59,3 +59,36 @@ declare const APP_CONFIG_TITLE_CORE: string;
 declare const APP_CONFIG_TITLE_CSVC: string;
 declare const APP_CONFIG_TITLE_THU_VIEN: string;
 declare const APP_CONFIG_TITLE_QLVB: string;
+
+declare namespace PhongHoc {
+	interface IRecord {
+		maPhong: string;
+		tenPhong: string;
+		soChoNgoi: number;
+		loaiPhong: 'ly_thuyet' | 'thuc_hanh' | 'hoi_truong';
+		nguoiPhuTrach: string;
+	}
+}
+
+declare namespace Blog {
+	interface ITag {
+		id: string;
+		name: string;
+		color: string;
+	}
+
+	interface IPost {
+		id: string;
+		title: string;
+		slug: string;
+		summary: string;
+		content: string;
+		coverImage: string;
+		author: string;
+		tags: string[];
+		status: 'draft' | 'published';
+		viewCount: number;
+		createdAt: string;
+		updatedAt: string;
+	}
+}
