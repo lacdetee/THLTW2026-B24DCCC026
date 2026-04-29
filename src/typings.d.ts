@@ -59,3 +59,86 @@ declare const APP_CONFIG_TITLE_CORE: string;
 declare const APP_CONFIG_TITLE_CSVC: string;
 declare const APP_CONFIG_TITLE_THU_VIEN: string;
 declare const APP_CONFIG_TITLE_QLVB: string;
+
+declare namespace PhongHoc {
+	interface IRecord {
+		maPhong: string;
+		tenPhong: string;
+		soChoNgoi: number;
+		loaiPhong: 'ly_thuyet' | 'thuc_hanh' | 'hoi_truong';
+		nguoiPhuTrach: string;
+	}
+}
+
+declare namespace Blog {
+	interface ITag {
+		id: string;
+		name: string;
+		color: string;
+	}
+
+	interface IPost {
+		id: string;
+		title: string;
+		slug: string;
+		summary: string;
+		content: string;
+		coverImage: string;
+		author: string;
+		tags: string[];
+		status: 'draft' | 'published';
+		viewCount: number;
+		createdAt: string;
+		updatedAt: string;
+	}
+}
+
+declare namespace Fitness {
+	type WorkoutType = 'Cardio' | 'Strength' | 'Yoga' | 'HIIT' | 'Other';
+	type WorkoutStatus = 'completed' | 'missed';
+	type GoalType = 'weight_loss' | 'muscle_gain' | 'endurance' | 'other';
+	type GoalStatus = 'in_progress' | 'achieved' | 'cancelled';
+	type Difficulty = 'easy' | 'medium' | 'hard';
+	type MuscleGroup = 'Chest' | 'Back' | 'Legs' | 'Shoulders' | 'Arms' | 'Core' | 'Full Body';
+
+	interface IWorkout {
+		id: string;
+		date: string;
+		type: WorkoutType;
+		duration: number;
+		calories: number;
+		note: string;
+		status: WorkoutStatus;
+	}
+
+	interface IHealthMetric {
+		id: string;
+		date: string;
+		weight: number;
+		height: number;
+		bmi: number;
+		heartRate: number;
+		sleepHours: number;
+	}
+
+	interface IGoal {
+		id: string;
+		name: string;
+		type: GoalType;
+		targetValue: number;
+		currentValue: number;
+		deadline: string;
+		status: GoalStatus;
+		unit: string;
+	}
+
+	interface IExercise {
+		id: string;
+		name: string;
+		muscleGroup: MuscleGroup;
+		difficulty: Difficulty;
+		description: string;
+		instructions: string;
+		caloriesPerHour: number;
+	}
+}

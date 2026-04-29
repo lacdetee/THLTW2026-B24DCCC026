@@ -1,0 +1,9 @@
+export { default as Dashboard } from './Dashboard';
+export { default as NhatKyTapLuyen } from './NhatKyTapLuyen';
+export { default as FormTapLuyen } from './FormTapLuyen';
+export { default as NhatKyChiSo } from './NhatKyChiSo';
+export { default as FormChiSo } from './FormChiSo';
+export { default as QuanLyMucTieu } from './QuanLyMucTieu';
+export { default as FormMucTieu } from './FormMucTieu';
+export { default as ThuVienBaiTap } from './ThuVienBaiTap';
+export { default as FormBaiTapThuVien } from './FormBaiTapThuVien';
