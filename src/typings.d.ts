@@ -92,3 +92,53 @@ declare namespace Blog {
 		updatedAt: string;
 	}
 }
+
+declare namespace Fitness {
+	type WorkoutType = 'Cardio' | 'Strength' | 'Yoga' | 'HIIT' | 'Other';
+	type WorkoutStatus = 'completed' | 'missed';
+	type GoalType = 'weight_loss' | 'muscle_gain' | 'endurance' | 'other';
+	type GoalStatus = 'in_progress' | 'achieved' | 'cancelled';
+	type Difficulty = 'easy' | 'medium' | 'hard';
+	type MuscleGroup = 'Chest' | 'Back' | 'Legs' | 'Shoulders' | 'Arms' | 'Core' | 'Full Body';
+
+	interface IWorkout {
+		id: string;
+		date: string;
+		type: WorkoutType;
+		duration: number;
+		calories: number;
+		note: string;
+		status: WorkoutStatus;
+	}
+
+	interface IHealthMetric {
+		id: string;
+		date: string;
+		weight: number;
+		height: number;
+		bmi: number;
+		heartRate: number;
+		sleepHours: number;
+	}
+
+	interface IGoal {
+		id: string;
+		name: string;
+		type: GoalType;
+		targetValue: number;
+		currentValue: number;
+		deadline: string;
+		status: GoalStatus;
+		unit: string;
+	}
+
+	interface IExercise {
+		id: string;
+		name: string;
+		muscleGroup: MuscleGroup;
+		difficulty: Difficulty;
+		description: string;
+		instructions: string;
+		caloriesPerHour: number;
+	}
+}

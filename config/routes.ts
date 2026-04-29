@@ -54,6 +54,12 @@ export default [
 		icon: 'ReadOutlined',
 		component: './TH07',
 	},
+	{
+		path: '/fitness',
+		name: 'Fitness Tracker',
+		icon: 'ThunderboltOutlined',
+		component: './TH08',
+	},
 
 	// DANH MUC HE THONG
 	// {
