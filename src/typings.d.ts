@@ -142,3 +142,19 @@ declare namespace Fitness {
 		caloriesPerHour: number;
 	}
 }
+
+declare namespace Kanban {
+	type TaskStatus = 'todo' | 'in_progress' | 'done';
+	type Priority = 'high' | 'medium' | 'low';
+
+	interface ITask {
+		id: string;
+		name: string;
+		description: string;
+		deadline: string;
+		priority: Priority;
+		status: TaskStatus;
+		tag: string;
+		createdAt: string;
+	}
+}

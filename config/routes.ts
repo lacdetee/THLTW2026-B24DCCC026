@@ -60,6 +60,12 @@ export default [
 		icon: 'ThunderboltOutlined',
 		component: './TH08',
 	},
+	{
+		path: '/kanban',
+		name: 'Task Kanban',
+		icon: 'ProjectOutlined',
+		component: './TH09',
+	},
 
 	// DANH MUC HE THONG
 	// {
